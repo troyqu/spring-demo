@@ -1,0 +1,6 @@
+#忽略gradel idea build文件
+./*/.gradle
+./*/.idea
+./*/build
+
+
