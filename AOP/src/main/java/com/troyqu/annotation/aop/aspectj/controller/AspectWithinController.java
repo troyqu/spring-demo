@@ -1,4 +1,4 @@
-package com.troyqu.annotation.aop.aspectj;
+package com.troyqu.annotation.aop.aspectj.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @Time 下午5:06
  */
 @RestController
-public class TestAspectWithinController {
+public class AspectWithinController {
 
-    private Logger logger = LoggerFactory.getLogger(TestAspectWithinController.class);
+    private Logger logger = LoggerFactory.getLogger(AspectWithinController.class);
 
     @GetMapping("/asp/within/test")
     public void test() {

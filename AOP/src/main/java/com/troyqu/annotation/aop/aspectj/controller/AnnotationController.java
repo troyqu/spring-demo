@@ -1,4 +1,4 @@
-package com.troyqu.annotation.aop.aspectj;
+package com.troyqu.annotation.aop.aspectj.controller;
 
 import com.troyqu.annotation.aop.aspectj.annotation.Human;
 import com.troyqu.annotation.aop.aspectj.annotation.Troy;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @Time 下午12:04
  */
 @RestController
-public class TestController {
+public class AnnotationController {
 
-    private Logger logger = LoggerFactory.getLogger(TestController.class);
+    private Logger logger = LoggerFactory.getLogger(AnnotationController.class);
 
     @GetMapping("/asp/test")
     @Troy

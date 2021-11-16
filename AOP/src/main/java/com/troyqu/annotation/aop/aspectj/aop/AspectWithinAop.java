@@ -22,7 +22,7 @@ public class AspectWithinAop {
     /**
      * within 处理某一个具体类或者包下的所有方法
      */
-    @Pointcut("within(com.troyqu.annotation.aop.aspectj.TestAspectWithinController)")
+    @Pointcut("within(com.troyqu.annotation.aop.aspectj.controller.AspectWithinController)")
     public void withInPointCut() {
     }
 

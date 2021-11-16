@@ -28,7 +28,7 @@ public class AspectExecutionAop {
      * 第二个*号：表示类名，*号表示所有的类。
      * *(…):最后这个星号表示方法名，*号表示所有的方法，后面括弧里面表示方法的参数，两个句点表示任何参数
      */
-    @Pointcut("execution(* com.troyqu.annotation.aop.aspectj.controllerexec..*.*(..))")
+    @Pointcut("execution(* com.troyqu.annotation.aop.aspectj.execcontroller..*.*(..))")
     public void execPointCut() {
     }
 

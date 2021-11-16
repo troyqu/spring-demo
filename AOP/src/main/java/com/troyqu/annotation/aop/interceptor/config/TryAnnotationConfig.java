@@ -15,6 +15,7 @@ import org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapt
 public class TryAnnotationConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        //通过PathPatterns配置interceptor的生效范围，如果不添加默认会拦截所有请求，所以最好结合实际使用情况配置相应的path
         registry.addInterceptor(new WebRequestHandlerInterceptorAdapter(new LoggerInterceptor())).addPathPatterns("/test", "/login");
     }
 }
