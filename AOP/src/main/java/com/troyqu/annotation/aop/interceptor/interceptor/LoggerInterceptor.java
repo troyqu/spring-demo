@@ -20,7 +20,8 @@ import java.lang.reflect.Method;
 public class LoggerInterceptor implements WebRequestInterceptor {
 
     private Logger logger = LoggerFactory.getLogger(LoggerInterceptor.class);
-//
+
+//    springboot 2.1.x版本中处理preHandler和postHandler的方式
 //    @Override
 //    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 //        HandlerMethod handlerMethod = (HandlerMethod)handler;
@@ -53,6 +54,7 @@ public class LoggerInterceptor implements WebRequestInterceptor {
 //    }
 
     /**
+     * springboot 2.5.x版本中处理preHandler和postHandler的方式
      * 缺点：先拦截所有方法，然后进行判断是否方法有LoggerAnnotation注解，不够高效
      *
      * @param request
