@@ -1,0 +1,9 @@
+server:
+  port: 8091
+spring:
+  rabbitmq:
+    host: 192.168.101.4
+    port: 5672
+    username: admin
+    password: admin
+    virtural-host: /smartops

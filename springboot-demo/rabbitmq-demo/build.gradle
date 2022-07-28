@@ -1,0 +1,11 @@
+bootJar {
+    launchScript() // optional
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+//    runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.amqp:spring-rabbit-test'
+}
