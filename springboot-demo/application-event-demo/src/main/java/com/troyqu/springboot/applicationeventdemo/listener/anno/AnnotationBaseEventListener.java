@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
+import org.springframework.scheduling.annotation.Async;
 
 /**
  * 基于注解的ApplicationListener处理, listener支持多线程操作，当有多个event时间被触发的时候，如果第一个事件没有完成，不会阻塞后面的事件处理
@@ -14,8 +15,16 @@ import org.springframework.context.event.EventListener;
 @Configuration
 public class AnnotationBaseEventListener {
 
+    /**
+     * 配置Aysnc注解使用异步来处理事件，不添加async listener采用同步的方式来处理事件
+     *
+     * @param event
+     * @throws InterruptedException
+     */
+    @Async
     @EventListener(classes = {BaseEvent.class})
     public void tmsApproveEventListener(BaseEvent event) throws InterruptedException {
+        Thread.sleep(5 * 1000);
         hanlderEvent(event);
     }
 
