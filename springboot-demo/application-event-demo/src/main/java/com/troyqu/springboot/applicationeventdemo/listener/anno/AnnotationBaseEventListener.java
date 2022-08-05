@@ -21,7 +21,7 @@ public class AnnotationBaseEventListener {
      * @param event
      * @throws InterruptedException
      */
-    @Async
+    @Async("threadPoolTaskExecutor")
     @EventListener(classes = {BaseEvent.class})
     public void tmsApproveEventListener(BaseEvent event) throws InterruptedException {
         Thread.sleep(5 * 1000);
