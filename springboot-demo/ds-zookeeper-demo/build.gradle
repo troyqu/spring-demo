@@ -1,0 +1,45 @@
+bootJar {
+    launchScript() // optional
+}
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-zookeeper-discovery'
+    implementation 'org.springframework.cloud:spring-cloud-starter-zookeeper'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+//plugins {
+//    id 'java'
+//    id 'org.springframework.boot' version '2.7.12-SNAPSHOT'
+//    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+//}
+//
+//group = 'com.troyqu.springbootdemo.dszookeeperdemo'
+//version = '0.0.1-SNAPSHOT'
+//sourceCompatibility = '1.8'
+//
+//repositories {
+//    mavenCentral()
+//    maven { url 'https://repo.spring.io/milestone' }
+//    maven { url 'https://repo.spring.io/snapshot' }
+//}
+//
+//ext {
+//    set('springCloudVersion', "2021.0.6")
+//}
+//
+//dependencies {
+//    implementation 'org.springframework.cloud:spring-cloud-starter-zookeeper-discovery'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//}
+//
+//dependencyManagement {
+//    imports {
+//        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+//    }
+//}
+//
+//tasks.named('test') {
+//    useJUnitPlatform()
+//}
+//

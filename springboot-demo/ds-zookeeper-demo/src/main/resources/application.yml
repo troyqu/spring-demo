@@ -1,0 +1,12 @@
+server:
+  port: 8004
+
+spring:
+  appliation:
+    name: ds-zookeeper-demo
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+      discovery:
+        enabled: true
+        register: true

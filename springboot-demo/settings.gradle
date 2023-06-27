@@ -1,3 +1,5 @@
 rootProject.name = 'springboot-demo'
 include 'rabbitmq-demo'
 include 'application-event-demo'
+include 'ds-zookeeper-demo'
+include 'springcloud-gateway-demo'
