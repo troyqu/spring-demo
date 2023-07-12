@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'com.troyqu.springbootdemo.dubboxmldemo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.troyqu.springbootdemo.dubboxmldemo' // Replace with your desired group ID
+            artifactId = 'dubbo-api'  // Replace with your desired artifact ID
+            version =   '0.0.1-troyqu'// Replace with your desired version
+
+            from components.java
+        }
+    }
+}

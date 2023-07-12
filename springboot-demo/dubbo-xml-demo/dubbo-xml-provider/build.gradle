@@ -1,0 +1,13 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.7'
+
+    implementation 'org.apache.curator:curator-framework:2.10.0'
+    implementation 'org.apache.curator:curator-recipes:2.10.0'
+
+    implementation 'com.troyqu.springbootdemo.dubboxmldemo:dubbo-api:0.0.1-troyqu'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+//    implementation 'org.apache.dubbo:dubbo:2.7.7'
+//    implementation 'org.apache.zookeeper:zookeeper:3.4.9'
+}

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: dubbo-xml-provider
+server:
+  port: 8084
