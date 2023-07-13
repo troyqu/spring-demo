@@ -5,4 +5,5 @@ include 'ds-zookeeper-demo'
 include 'springcloud-gateway-demo'
 include 'dubbo-xml-demo'
 include 'dubbo-xml-demo:dubbo-xml-provider'
+include 'dubbo-xml-demo:dubbo-xml-consumer'
 
