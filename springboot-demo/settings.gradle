@@ -12,3 +12,5 @@ include 'dubbo-xml-demo:dubbo-xml-consumer'
 include 'dubbo-springboot-demo'
 include 'dubbo-springboot-demo:dubbo-springboot-consumer'
 include 'dubbo-springboot-demo:dubbo-springboot-provider'
+
+include 'dubbo-annotation-demo'

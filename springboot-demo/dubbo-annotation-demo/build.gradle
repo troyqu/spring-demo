@@ -1,0 +1,9 @@
+dependencies {
+    implementation 'org.apache.dubbo:dubbo-spring-boot-starter:2.7.7'
+
+    implementation 'org.apache.curator:curator-framework:2.10.0'
+    implementation 'org.apache.curator:curator-recipes:2.10.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
