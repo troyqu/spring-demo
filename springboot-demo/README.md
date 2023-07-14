@@ -4,6 +4,9 @@
 - ds-zookeeper-demo
 - rabbitmq-demo
 - springcloud-gateway-demo
+- dubbo-xml-demo
+- dubbo-springboot-demo
+- dubbo-annotation-demo
 
 ### 异步/事件处理
 - application-event-demo：基于spring自带的applicationevent和applicationlistener实现的异步处理；
@@ -14,3 +17,8 @@
 
 ### springcloud相关
 - springcloud-gateway-demo：基于webflux和jwt实现的springcloud gateway身份认证
+
+### dubbo相关
+- dubbo-xml-demo：基于springboot+xml实现的dubbo helloworld sample
+- dubbo-springboot-demo：基于springboot实现的dubbo helloworld sample
+- dubbo-annotation-demo：基于springboot+annotation实现的dubbo helloworld sample
